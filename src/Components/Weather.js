@@ -46,7 +46,7 @@ export const Weather = () => {
                 </h2>
                 <h1 className='temp'> {Math.round(city.temp- 273)}°C  </h1>
 
-                <h3 className='temp'> Minimum Temp : {city.temp_min}°C</h3>
+                <h3 className='temp'> Minimum Tenmp : {city.temp_min}°C</h3>
                 <h3 className='temp'>Maximum Temp : {city.temp_max}°C</h3>
 
                 <div className=' wave1'></div>
