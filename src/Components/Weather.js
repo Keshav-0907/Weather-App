@@ -36,7 +36,7 @@ export const Weather = () => {
 
             {!city ? (
                 <>
-                <p>Please enter a valid City</p>
+                <p>Please enter valid City</p>
                 <img className='wait-img' src='https://cdn-icons-png.flaticon.com/512/3175/3175199.png' alt=''></img>
                 </>
             ) : 
