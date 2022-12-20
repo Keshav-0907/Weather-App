@@ -35,7 +35,10 @@ export const Weather = () => {
                 </div>
 
             {!city ? (
-                <p>Enter a Valid City Name</p>
+                <>
+                <p>Please enter a valid City</p>
+                <img className='wait-img' src='https://cdn-icons-png.flaticon.com/512/3175/3175199.png' alt=''></img>
+                </>
             ) : 
 
             <div  className='info'>
@@ -46,8 +49,14 @@ export const Weather = () => {
                 </h2>
                 <h1 className='temp'> {Math.round(city.temp- 273)}°C  </h1>
 
-                <h3 className='temp'> Minimum Tenmp : {city.temp_min}°C</h3>
-                <h3 className='temp'>Maximum Temp : {city.temp_max}°C</h3>
+                <h3 className='temp'> Min Tenmp : {Math.round(city.temp_min- 273)}°C</h3>
+                <h3 className='temp'>Max Temp : {Math.round(city.temp_max- 273)}°C</h3>
+                
+                <div className='add-info'>
+                    <h5>Air Pressure : {city.pressure} hPa</h5>
+                    <h5>Humidity : {city.humidity}%</h5>
+                </div>
+
 
                 <div className=' wave1'></div>
                 <div className=' wave2'></div>
